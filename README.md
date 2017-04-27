@@ -1,31 +1,25 @@
-# Boilerplate for creating React Npm packages with ES2015
+# A package for creating Navigation Panels to host on simple hosting services like Github
 
-The package is based on [npm-base](https://github.com/kadirahq/npm-base) package by [Kadira](https://github.com/kadirahq) which is really great when you want to prepare Npm package. This one is prepared to be used as a starter point for React components which needs to be published on Npm.
 
-It includes linting with [ESLint](http://eslint.org/) and testing with [Mocha](https://mochajs.org/), [Enzyme](http://airbnb.io/enzyme/) and [JSDOM](https://github.com/tmpvar/jsdom).
-
-Also there is of course ES6 transpilation.
 
 ## Usage
 
-1. Clone this repo
-2. Inside cloned repo run `npm install && rm -rf .git && git init` and update `package.json` with your package name.
-3. If you want to run tests: `npm test` or `npm run testonly` or `npm run test-watch`. You need to write tests in `__tests__` folder. You need at least Node 4 on your machine to run tests.
-4. If you want to run linting: `npm test` or `npm run lint`. Fix bugs: `npm run lint-fix`. You can adjust your `.eslintrc` config file.
-5. If you want to run transpilation to ES5 in `dist` folder: `npm run prepublish` (standard npm hook).
+1. Install with `npm install --save react-github-nav` 
+2. Go to the page where you would want to have the Nav and add this to the render section of your code `<GitNav NavTexts={
+	['Google',
+	'Facebook']}
+	NavURLs={
+	['http://google.com',
+	'http://facebook.com']}
+	/>`
+3. Bonus tip - Use the component in the main App.js/Index.js to keep it universal (It's logical but I suppose I should mention it anyways)
 
-## CSS and preprocessors
 
-For more information check out this thread: [#5](https://github.com/juliancwirko/react-npm-boilerplate/issues/5)
 
-## Blog post about it:
+## Special Thanks to 
 
-- [Creating React NPM packages with ES2015](http://julian.io/creating-react-npm-packages-with-es2015/)
-
-## Also check out
-
-- [React Alert UI component](https://github.com/juliancwirko/react-s-alert)
-- [React project boilerplate with Webpack, HMR, React Router](https://github.com/juliancwirko/react-boilerplate)
+- [React NPM Boilerplate](https://github.com/juliancwirko/react-npm-boilerplate) for the starter code
+	and [@thinhvo0108](http://stackoverflow.com/users/7318933/thinhvo0108) for pointing me to it
 
 ## License
 
